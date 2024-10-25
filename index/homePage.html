@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interior design website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <div class="h-hs-bg text-white">
+      <!-- Header -->
+
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <div class="d-flex flex-column">
+                <h2 class="header-icon text-light fw-bold my-0">
+                    <i>Furniture Haven</i>
+                </h2>
+                <span class="text-light">Interior Design</span>
+            </div>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto my-2">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="./homePage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light mx-md-3" href="./index.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light mx-md-3" href="./contact-us.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Our Services</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <iconify-icon class="fs-4 me-3" icon="mdi:person-circle-outline"></iconify-icon>
+                    <div class="position-relative mx-3 d-flex align-items-center">
+                        <a class="text-decoration-line-through text-light mt-2" href="./addToCart.html">
+                            <iconify-icon
+                                class="fs-4"
+                                icon="mdi:cart-outline"
+                                data-bs-toggle="offcanvas"
+                                data-bs-target="#cartOffcanvas"
+                                id="cartIcon"
+                            ></iconify-icon>
+                        </a>
+                    </div>
+                    <iconify-icon class="fs-4 ms-3" icon="material-symbols:search"></iconify-icon>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+     
+
+      <!-- hero-sec -->
+      <div class="container">
+        <div class="row d-flex justify-content-between mt-5">
+          <!-- left-sec -->
+          <div class="col-sm-12 col-md-12 col-lg-6">
+            <p class="clr-yellow fs-5 my-4">House interior design</p>
+            <h2 class="mt-2">Welcome To our</h2>
+
+            <div class="d-flex gap-2 my-2">
+              <h2 class="clr-yellow">House Interior</h2>
+              <h2>Design</h2>
+            </div>
+            <h2 class="my-2">Services</h2>
+            <p class="mt-3">
+              Transform your space with stylish furniture, crafted to bring
+              elegance and comfort to every room. Order online and elevate your
+              home effortlessly!
+            </p>
+
+            <div class="d-flex my-5">
+              <button
+                class="bg-clr-yellow text-white border-0 py-2 px-3 rounded-1 fw-medium"
+              >
+                Our Services
+              </button>
+              <button
+                class="work-btn ms-5 text-white border-2 border-white py-2 px-4 rounded-1 fw-medium"
+              >
+                See work
+              </button>
+            </div>
+            <br />
+            <!-- RANGES -->
+
+            <div class="d-flex justify-content-between my-3">
+              <div>
+                <h4>5000+</h4>
+                <p class="fw-normal">Unique style</p>
+              </div>
+
+              <div>
+                <h4>2500+</h4>
+                <p class="fw-normal">Happy customer</p>
+              </div>
+              <div>
+                <h4>2500+</h4>
+                <p class="fw-normal">certified outlets</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- right-sec -->
+          <div class="col-sm-12 col-md-12 col-lg-6 d-flex">
+            <img
+              class="img-one img-fluid rounded-2"
+              src="./Images/h-sec-img.png"
+              alt="1"
+            />
+            &nbsp; &nbsp;
+            <img
+              class="img-two img-fluid rounded-2 d-none d-sm-block"
+              src="./Images/h-sec-img-2.png"
+              alt="2"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shipping and products -->
+
+    <div
+      class="container my-5 text-center justify-content-between align-items-center"
+    >
+      <div class="row">
+        <div class="col-6 col-lg-3">
+          <img
+            class="bg-clr-yellow rounded-circle px-3 py-3"
+            src="./Images/icon-1.png"
+            alt=""
+          />
+          <p class="fw-semibold fs-5 clr-l-black">Fast & Free <br />Shipping</p>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <img
+            class="bg-clr-yellow rounded-circle px-3 py-3"
+            src="./Images/icon-2.png"
+            alt=""
+          />
+          <p class="fw-semibold fs-5 clr-l-black">Easy to <br />Shop</p>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <img
+            class="bg-clr-yellow rounded-circle px-3 py-3"
+            src="./Images/icon-3.png"
+            alt=""
+          />
+          <p class="fw-semibold fs-5 clr-l-black">24/7 <br />Support</p>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <img
+            class="bg-clr-yellow rounded-circle px-3 py-3"
+            src="./Images/icon-4.png"
+            alt=""
+          />
+          <p class="fw-semibold fs-5 clr-l-black">Hassle Free <br />Returns</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards -->
+
+    <div class="container d-flex justify-content-between my-5">
+      <div class="row">
+        <!-- left sec -->
+        <div class="col-sm-12 col-md-6 col-lg-6 my-3">
+          <div
+            class="card-bg d-flex justify-content-between align-items-center rounded-3 align-items-center border-black p-2"
+          >
+            <div class="card-body px-4">
+              <h5 class="card-title">New collection</h5>
+              <p class="card-text">
+                Eclipse Coffee Table Nordic Dining Table Rustic Farmhouse Table
+                Modern Glass Table Classic Wooden Console.
+              </p>
+              <a href="#" class="btn bg-clr-yellow">View all</a>
+            </div>
+            <div>
+              <img class="img-fluid" src="./Images/table.png" alt="ss" />
+            </div>
+          </div>
+
+          <div
+            class="card-bg d-flex justify-content-between align-items-center mt-2 rounded-3 p-2"
+          >
+            <div class="card-body px-4">
+              <h5 class="card-title">Aura Touch Lamp</h5>
+              <p class="card-text">
+                Luxe Table Lamp Edison Glow Lamp Rustic Copper Lamp Modern Arc
+                Lamp.
+              </p>
+              <a href="#" class="btn bg-clr-yellow">View all</a>
+            </div>
+            <div>
+              <img class="img-fluid" src="./Images/lamp.png" alt="ss" />
+            </div>
+          </div>
+        </div>
+
+        <!-- right sec -->
+
+        <div class="col-sm-12 col-md-5 col-lg-5 p-4 card-bg rounded-3 my-3">
+          <div class="card-body">
+            <h5 class="card-title">Aura Touch Lamp</h5>
+            <p class="card-text">
+              Velvet Comfort Chair Nordic Relax Chair Eclipse Swivel Chair Metro
+              Dining Chair Urban Chic Armchair
+            </p>
+            <a href="#" class="btn bg-clr-yellow">View all</a>
+          </div>
+          <div>
+            <img class="img-fluid" src="./Images/sofa.png" alt="ss" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- categories -->
+
+    <div class="container">
+      <h2>Featured categories</h2>
+
+      <div class="">
+        <div class="row justify-content-between mt-5">
+          <div w class="col-sm-6 col-md-4 col-lg-2 mt-2 text-center">
+            <img
+              width="150px"
+              class="img-bg img-fluid rounded-circle"
+              src="./Images/item-1.png"
+              alt="1"
+            />
+            <h5>Clock</h5>
+            <p>Discover 110 product</p>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-2 mt-2 text-center">
+            <img
+              width="150px"
+              class="img-bg img-fluid pt-2 pb-3 rounded-circle"
+              src="./Images/item.png"
+              alt="1"
+            />
+            <h5>Dinner Table</h5>
+            <p>Discover 110 product</p>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-2 mt-2 text-center">
+            <img
+              width="150px"
+              class="img-bg img-fluid rounded-circle"
+              src="./Images/item-3.png"
+              alt="1"
+            />
+            <h5>Pillow</h5>
+            <p>Discover 110 product</p>
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-2 mt-2 text-center">
+            <img
+              width="150px"
+              class="img-bg img-fluid rounded-circle"
+              src="./Images/item-4.png"
+              alt="1"
+            />
+            <h5>Lamp</h5>
+            <p>Discover 110 product</p>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-2 mt-2 text-center">
+            <img
+              width="150px"
+              class="img-bg img-fluid py-1 rounded-circle"
+              src="./Images/item-5.png"
+              alt="1"
+            />
+            <h5>Arm Chair</h5>
+            <p>Discover 110 product</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <h2>Trending Product <br />For you!</h2>
+    </div>
+
+    <ul class="container d-flex text-center">
+      <li class="list-unstyled li-first">Living room</li>
+      <li class="list-unstyled mx-5 fw-semibold">Bed room</li>
+      <li class="list-unstyled fw-semibold">Dining room</li>
+      <li class="list-unstyled mx-5 fw-semibold">Out door</li>
+      <li class="list-unstyled fw-semibold">in door</li>
+    </ul>
+
+    <!-- Cards Section -->
+    <div class="container mt-5">
+      <div class="container mt-3">
+        <div class="row justify-content-center">
+          <div class="row justify-content-center mt-3">
+            <!-- Card 1 -->
+            <div class="col-md-4 mb-4">
+              <div
+                class="border border-1 rounded position-relative"
+                style="height: 100%"
+              >
+                <div class="p-3">
+                  <img
+                    src="./Images/card-1.png"
+                    class="selected-item-1 img-fluid rounded-3 card-img-top"
+                    alt="Comfortable Sofa"
+                  />
+                  <i
+                    class="bi bi-heart position-absolute start-0 top-0 fs-2 ms-2 mt-2 text-warning"
+                  ></i>
+                </div>
+                <div class="p-3 h-hs-bg text-white rounded">
+                  <p>Comfortable Sofa</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price">$50.5</span>
+                    <img
+                      class="bg-warning rounded-circle p-1 add-to-cart"
+                      src="../images/cart.png"
+                      alt=""
+                      onclick="addToCart('Comfortable Sofa', 50.5, './Images/card-1.png')"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-4">
+              <div
+                class="border border-1 rounded position-relative"
+                style="height: 100%"
+              >
+                <div class="p-3">
+                  <img
+                    src="./Images/lamp.png"
+                    class="selected-item-1 img-fluid rounded-3 card-img-top"
+                    alt="Beautiful Lamp"
+                  />
+                  <i
+                    class="bi bi-heart position-absolute start-0 top-0 fs-2 ms-2 mt-2 text-warning"
+                  ></i>
+                </div>
+                <div class="p-3 h-hs-bg text-white rounded">
+                  <p>Beautiful Lamp</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price">$30.0</span>
+                    <img
+                      class="bg-warning rounded-circle p-1 add-to-cart"
+                      src="../images/cart.png"
+                      alt=""
+                      onclick="addToCart('Beautiful Lamp', 30.0, './Images/lamp.png')"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4 mb-4">
+              <div
+                class="border border-1 rounded position-relative"
+                style="height: 100%"
+              >
+                <div class="p-3">
+                  <img
+                    src="./Images/card-3.png"
+                    class="selected-item-1 img-fluid rounded-3 card-img-top"
+                    alt="Comfortable Sofa"
+                  />
+                  <i
+                    class="bi bi-heart position-absolute start-0 top-0 fs-2 ms-2 mt-2 text-warning"
+                  ></i>
+                </div>
+                <div class="p-3 h-hs-bg text-white rounded">
+                  <p>Comfortable Sofa</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price">$50.5</span>
+                    <img
+                      class="bg-warning rounded-circle p-1 add-to-cart"
+                      src="../images/cart.png"
+                      alt=""
+                      onclick="addToCart('Comfortable Sofa', 50.5, './Images/card-3.png')"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-4 mb-4">
+              <div
+                class="border border-1 rounded position-relative"
+                style="height: 100%"
+              >
+                <div class="p-3">
+                  <img
+                    src="./Images/card-4.png"
+                    class="selected-item-1 img-fluid rounded-3 card-img-top"
+                    alt="Soft Pillow"
+                  />
+                  <i
+                    class="bi bi-heart position-absolute start-0 top-0 fs-2 ms-2 mt-2 text-warning"
+                  ></i>
+                </div>
+                <div class="p-3 h-hs-bg text-white rounded">
+                  <p>Soft Pillow</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price">$10.5</span>
+                    <img
+                      class="bg-warning rounded-circle p-1 add-to-cart"
+                      src="../images/cart.png"
+                      alt=""
+                      onclick="addToCart('Soft Pillow', 10.5, './Images/card-4.png')"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-4 mb-4">
+              <div
+                class="border border-1 rounded position-relative"
+                style="height: 100%"
+              >
+                <div class="p-3">
+                  <img
+                    src="./Images/card-5.png"
+                    class="selected-item-1 img-fluid rounded-3 card-img-top"
+                    alt="Pillows on Bed Set"
+                  />
+                  <i
+                    class="bi bi-heart position-absolute start-0 top-0 fs-2 ms-2 mt-2 text-warning"
+                  ></i>
+                </div>
+                <div class="p-3 h-hs-bg text-white rounded">
+                  <p>Pillows on Bed Set</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price">$10.5</span>
+                    <img
+                      class="bg-warning rounded-circle p-1 add-to-cart"
+                      src="../images/cart.png"
+                      alt=""
+                      onclick="addToCart('Pillows on Bed Set', 10.5, './Images/card-5.png')"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-4 mb-4">
+              <div
+                class="border border-1 rounded position-relative"
+                style="height: 100%"
+              >
+                <div class="p-3">
+                  <img
+                    src="../images/img-8.png"
+                    class="selected-item-1 img-fluid rounded-3 card-img-top"
+                    alt="Soft Teal Ottoman"
+                  />
+                  <i
+                    class="bi bi-heart position-absolute start-0 top-0 fs-2 ms-2 mt-2 text-warning"
+                  ></i>
+                </div>
+                <div class="p-3 h-hs-bg text-white rounded">
+                  <p>Soft Teal Ottoman</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="price">$20.5</span>
+                    <img
+                      class="bg-warning rounded-circle p-1 add-to-cart"
+                      src="../images/cart.png"
+                      alt=""
+                      onclick="addToCart('Soft Teal Ottoman', 20.5, './Images/card-6.png')"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+
+    <section>
+      <div class="h-hs-bg text-white py-5 mt-5">
+        <div class="container">
+          <h2 class="text-center">Furniture Haven</h2>
+          <hr />
+  
+          <div
+            class="row justify-content-between d-flex flex-column flex-md-row text-center text-md-start"
+          >
+            <ul class="col-12 col-md-2 mb-3 mb-md-0">
+              <h4>About</h4>
+              <li class="list-unstyled">Our company</li>
+              <li class="list-unstyled my-2">Our Story</li>
+              <li class="list-unstyled">Blog</li>
+            </ul>
+  
+            <ul class="col-12 col-md-2 mb-3 mb-md-0">
+              <h4>Information</h4>
+              <li class="list-unstyled">Delivery Info</li>
+              <li class="list-unstyled my-2">Privacy Policy</li>
+              <li class="list-unstyled">Terms & Conditions</li>
+              <li class="list-unstyled mt-2">Returns</li>
+            </ul>
+  
+            <ul class="col-12 col-md-2 mb-3 mb-md-0">
+              <h4>Support</h4>
+              <li class="list-unstyled">Contact Us</li>
+              <li class="list-unstyled my-2">Help</li>
+              <li class="list-unstyled">FAQ</li>
+              <li class="list-unstyled mt-2">Checkout</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

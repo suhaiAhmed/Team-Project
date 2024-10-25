@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.dark {
+  background-color: #243f52;
+}
+.header-icon{
+    font-family: "Roboto", sans-serif;
+}
+.card-img-top{
+    transition: transform 0.3s ease-in-out; 
+    
+}
+
+
+.card-img-top:hover {
+    transform: scale(1.1); 
+    cursor: pointer;
+}
+/* .reveiw-section{
+    display: none;
+} */
+.content-section {
+    display: none; /* Initially hide all sections */
+}                
+
+
+/* cart  */
+
+.card-img-top {
+    border-radius: 5%; /* Rounded image */
+    height: 250px; 
+    object-fit: contain;
+}
+.total-bill {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+.cart-items {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.cart-item img {
+    height: 50px; /* Image height in cart */
+    margin-right: 10px;
+}
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.quantity-controls button {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+}
+.quantity-controls span {
+    margin: 0 10px;
+    font-size: 18px;
+} 
+.li-item{
+    list-style: none;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+/* hover effects  */
+
+
+.hover-buttons {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover .hover-buttons {
+    opacity: 1;
+}
+
+
+/* faraz  */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.dark {
+  background-color: #243f52;
+}
+.header-icon{
+    font-family: "Roboto", sans-serif;
+}
+
+.h-hs-bg{
+    background: #243F52;
+    
+}
+
+.clr-yellow{
+    color: #E8BF04;
+}
+
+
+.bg-clr-yellow{
+    background-color: #E8BF04;
+}
+
+.img-one{
+    width: 471px;
+    height: 450px;
+}
+.img-two{
+    width: 195px;
+    height: 450px;
+}
+.work-btn{
+    background-color:#243F52 ;
+}
+.work-btn:hover{
+    cursor: pointer;
+    background-color: #E8BF04;
+}
+.clr-l-black{
+color: #5F6368;
+}
+
+.p-two {
+    bottom: 165px;
+}
+
+.card-bg{
+    background-color: #F6F5F5;
+}
+
+
+.img-bg{
+    background-color: #D9D9D9;
+}
+
+.li-first{
+    color: #4188B9;
+    border-bottom: 1px solid #4188B9 ;
+}
+
+
+.card-h-W-set{
+    width: 397px;
+    height:514px;
+}
+
+.card-inner{
+    width: 365px; 
+}
+
+/* payment */
+.card-one-payment{
+    width: 270px;
+    height: 350px;
+    background-color: #F6F5F5;
+}
+
+input{
+    border: 1px solid rgb(196, 192, 192);
+}  
+
+
+
+/* header effexts  */
+
+    /* Nav links */
+    .navbar-nav .nav-link {
+        transition: color 0.3s ease; /* Smooth transition for color */
+        position: relative; /* For hover effect */
+    }
+
+    /* Hover effects for nav links */
+    .navbar-nav .nav-link:hover {
+        color: #ffdd57; /* Color change on hover */
+    }
+
+    /* Add an underline effect on hover */
+    .navbar-nav .nav-link::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #ffdd57; /* Underline color */
+        transition: width 0.3s ease, background-color 0.3s ease; /* Transition effect */
+        position: absolute;
+        left: 0;
+        bottom: -5px; /* Position the underline */
+        width: 0; /* Start with width 0 */
+    }
+
+    /* On hover, expand the underline */
+    .navbar-nav .nav-link:hover::after {
+        width: 100%; /* Full width on hover */
+    }
+
+    /* Icon styling */
+    .navbar .iconify-icon {
+        color: #ffdd57; /* Icon color */
+        transition: color 0.3s ease; /* Smooth transition for icon color */
+    }
+
+    /* Hover effect for icons */
+    .navbar .iconify-icon:hover {
+        color: #ffffff; /* Change color on hover */
+    }
