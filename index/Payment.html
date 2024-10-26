@@ -23,59 +23,65 @@
 
     <nav class="navbar navbar-expand-lg dark">
         <div class="container">
-            <div class="d-flex flex-column">
-                <h2 class="header-icon text-light fw-bold my-0">
-                    <i>Furniture Haven</i>
-                </h2>
-                <span class="text-light">Interior Design</span>
-            </div>
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto my-2">
-                    <li class="nav-item">
-                        <a class="nav-link active text-light" aria-current="page" href="./homePage.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light mx-md-3" href="./index.html">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="./about-us.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light mx-md-3" href="./contact-us.html">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Our Services</a>
-                    </li>
-                </ul>
-                <div class="d-flex align-items-center text-light">
-                    <iconify-icon class="fs-4 me-3" icon="mdi:person-circle-outline"></iconify-icon>
-                    <div class="position-relative mx-3 d-flex align-items-center">
-                        <a class="text-decoration-line-through text-light mt-2" href="./addToCart.html">
-                            <iconify-icon
-                                class="fs-4"
-                                icon="mdi:cart-outline"
-                                data-bs-toggle="offcanvas"
-                                data-bs-target="#cartOffcanvas"
-                                id="cartIcon"
-                            ></iconify-icon>
-                        </a>
-                    </div>
-                    <iconify-icon class="fs-4 ms-3" icon="material-symbols:search"></iconify-icon>
+          <div class="d-flex flex-column">
+            <h2 class="header-icon text-light fw-bold my-0">
+              <i>Furniture Haven</i>
+            </h2>
+            <span class="text-light">interior design</span>
+          </div>
+          <button
+            class="navbar-toggler bg-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto my-2">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="./homePage.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light mx-sm-3" href="./index.html"
+                  >Products</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="./about-us.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light mx-sm-3" href="./contact-us.html"
+                  >Contact Us</a
+                >
+              </li>
+              <li class="nav-item" id="servicesDropdown">
+                <a class="nav-link text-light" href="./services-1.html" role="button">
+                  Our Services
+                </a>
+                <div class="hover-content mt-1">
+                  <a class="" href="./services/./index.html">Service Page 2</a>
                 </div>
+              </li>
+            </ul>
+            <div>
+                <img class="" src="../images/account.png" alt="Account" id="popoverIcon" /> 
+              <a class="text-decoration-none" href="./addToCart.html">
+                <img class="mx-3" src="../images/cart.png" alt="Cart" />
+              </a>
+              <img src="../images/search.png" alt="" />
             </div>
+          </div>
         </div>
-    </nav>
+      </nav>
     <div class="container my-5">
         <div class="row align-items-center">
             <div class="col-12 col-md-6 col-lg-4">

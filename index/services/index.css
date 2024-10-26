@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header effects  */
+
+/* Nav links */
+.navbar-nav .nav-link {
+    transition: color 0.3s ease; /* Smooth transition for color */
+    position: relative; /* For hover effect */
+}
+
+/* Hover effects for nav links */
+.navbar-nav .nav-link:hover {
+    color: #ffdd57; /* Color change on hover */
+}
+
+/* Hover effects properties (remove for the border effect) */
+.navbar-nav .nav-link::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #ffdd57; /* Underline color */
+    transition: width 0.3s ease, background-color 0.3s ease; /* Transition effect */
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Position the underline */
+    width: 0; /* Start with width 0 */
+}
+
+/* On hover, expand the underline */
+.navbar-nav .nav-link:hover::after {
+    width: 100%; /* Full width on hover */
+}
+
+/* Icon styling */
+.navbar .iconify-icon {
+    color: #ffdd57; /* Icon color */
+    transition: color 0.3s ease; /* Smooth transition for icon color */
+}
+
+/* Hover effect for icons */
+.navbar .iconify-icon:hover {
+    color: #ffffff; /* Change color on hover */
+}
+
+
+.dark {
+    background-color: #243f52;
+}
+
+.header-icon {
+    font-family: "Roboto", sans-serif;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-section .card {
+    width: 32%; /* 3 cards side by side */
+}
+
+.card {
+    width: 100%;
+    height: 350px;
+    border: none;
+    background-color: inherit;
+    position: relative;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .box {
+    color: #262626;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    background: #fff;
+    border: 1px solid rgba(36, 63, 82, 0.3);
+    transition: transform 0.5s;
+}
+
+.card .box.front,
+.card .box.back {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card:hover .box.front {
+    transform: rotateY(180deg);
+}
+
+.card .box.back {
+    background: #243f52;
+    transform: rotateY(180deg);
+    padding: 20px 30px;
+    text-align: center;
+    user-select: none;
+}
+
+.card:hover .box.back {
+    transform: rotateY(360deg);
+}
+
+.socials i {
+    margin: 0 15px;
+}
+
+.hover-buttons {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover .hover-buttons {
+    opacity: 1;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .hero-section .card {
+        width: 100%; /* Stack cards on small screens */
+        margin-bottom: 15px;
+    }
+
+    .position-absolute {
+        flex-direction: column;
+        align-items: flex-start; /* Align items to the left */
+        padding: 10px; /* Add some padding to the button container */
+    }
+
+    .position-absolute .btn {
+        width: 100%; /* Full width buttons */
+        margin-bottom: 10px; /* Space between buttons */
+    }
+
+    .position-absolute .btn:last-child {
+        margin-bottom: 0; /* Remove bottom margin for the last button */
+    }
+}
+
+.hover-content {
+    display: none;
+    position: absolute;
+    background-color: #243f52;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Show the services section on hover */
+#servicesDropdown:hover .hover-content {
+    display: block;
+}
+
+/* Service links styling */
+.hover-content a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.hover-content a:hover {
+    color: #E8BF04;
+}
+
+/* Adjust margin for card columns on smaller screens */
+@media(max-width: 991.5px) {
+    .col-lg-4 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+}

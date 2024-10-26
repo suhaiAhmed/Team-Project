@@ -24,91 +24,97 @@
     <div class="h-hs-bg text-white">
       <!-- Header -->
 
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg dark">
         <div class="container">
-            <div class="d-flex flex-column">
-                <h2 class="header-icon text-light fw-bold my-0">
-                    <i>Furniture Haven</i>
-                </h2>
-                <span class="text-light">Interior Design</span>
-            </div>
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto my-2">
-                    <li class="nav-item">
-                        <a class="nav-link active text-light" aria-current="page" href="./homePage.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light mx-md-3" href="./index.html">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="./about-us.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light mx-md-3" href="./contact-us.html">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Our Services</a>
-                    </li>
-                </ul>
-                <div class="d-flex align-items-center">
-                    <iconify-icon class="fs-4 me-3" icon="mdi:person-circle-outline"></iconify-icon>
-                    <div class="position-relative mx-3 d-flex align-items-center">
-                        <a class="text-decoration-line-through text-light mt-2" href="./addToCart.html">
-                            <iconify-icon
-                                class="fs-4"
-                                icon="mdi:cart-outline"
-                                data-bs-toggle="offcanvas"
-                                data-bs-target="#cartOffcanvas"
-                                id="cartIcon"
-                            ></iconify-icon>
-                        </a>
-                    </div>
-                    <iconify-icon class="fs-4 ms-3" icon="material-symbols:search"></iconify-icon>
+          <div class="d-flex flex-column">
+            <h2 class="header-icon text-light fw-bold my-0">
+              <i>Furniture Haven</i>
+            </h2>
+            <span class="text-light">interior design</span>
+          </div>
+          <button
+            class="navbar-toggler bg-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto my-2">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="./homePage.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light mx-sm-3" href="./index.html"
+                  >Products</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="./about-us.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light mx-sm-3" href="./contact-us.html"
+                  >Contact Us</a
+                >
+              </li>
+              <li class="nav-item" id="servicesDropdown">
+                <a class="nav-link text-light" href="./services-1.html" role="button">
+                  Our Services
+                </a>
+                <div class="hover-content mt-1">
+                  <a class="" href="./services/./index.html">Service Page 2</a>
                 </div>
+              </li>
+            </ul>
+            <div>
+              <img class="" src="../images/account.png" alt="Account" id="popoverIcon" /> 
+              <a class="text-decoration-none" href="./addToCart.html">
+                <img class="mx-3" src="../images/cart.png" alt="Cart" />
+              </a>
+              <img src="../images/search.png" alt="" />
             </div>
+          </div>
         </div>
-    </nav>
+      </nav>
 
      
 
       <!-- hero-sec -->
       <div class="container">
-        <div class="row d-flex justify-content-between mt-5">
+        <div class="row justify-content-between mt-5">
           <!-- left-sec -->
           <div class="col-sm-12 col-md-12 col-lg-6">
             <p class="clr-yellow fs-5 my-4">House interior design</p>
-            <h2 class="mt-2">Welcome To our</h2>
+            <h1 class="mt-2">Welcome To our</h1>
 
             <div class="d-flex gap-2 my-2">
-              <h2 class="clr-yellow">House Interior</h2>
-              <h2>Design</h2>
+              <h1 class="clr-yellow">House Interior</h1>
+              <h1>Design</h1>
             </div>
-            <h2 class="my-2">Services</h2>
-            <p class="mt-3">
+            <h1 class="my-2">Services</h1>
+            <p class="mt-3 fs-4">
               Transform your space with stylish furniture, crafted to bring
               elegance and comfort to every room. Order online and elevate your
               home effortlessly!
             </p>
 
-            <div class="d-flex my-5">
+            <div class="d-flex my-3">
               <button
                 class="bg-clr-yellow text-white border-0 py-2 px-3 rounded-1 fw-medium"
               >
                 Our Services
               </button>
               <button
-                class="work-btn ms-5 text-white border-2 border-white py-2 px-4 rounded-1 fw-medium"
+                class="work-btn ms-2 text-white border-2 border-white py-2 px-4 rounded-1 fw-medium"
               >
                 See work
               </button>
@@ -118,19 +124,19 @@
 
             <div class="d-flex justify-content-between my-3">
               <div>
-                <h4>5000+</h4>
-                <p class="fw-normal">Unique style</p>
-              </div>
-
-              <div>
-                <h4>2500+</h4>
-                <p class="fw-normal">Happy customer</p>
+                  <h4 class="counter fw-bold" data-target="5000">0</h4>
+                  <p class="fw-normal">Unique style</p>
               </div>
               <div>
-                <h4>2500+</h4>
-                <p class="fw-normal">certified outlets</p>
+                  <h4 class="counter fw-bold" data-target="2500">0</h4>
+                  <p class="fw-normal">Happy customer</p>
               </div>
-            </div>
+              <div>
+                  <h4 class="counter fw-bold" data-target="2500">0</h4>
+                  <p class="fw-normal">Certified outlets</p>
+              </div>
+          </div>
+          
           </div>
 
           <!-- right-sec -->
@@ -236,14 +242,16 @@
 
         <!-- right sec -->
 
-        <div class="col-sm-12 col-md-5 col-lg-5 p-4 card-bg rounded-3 my-3">
-          <div class="card-body">
+        <div class="col-sm-12 col-md-5 col-lg-5 p-4 card-bg rounded-3 my-3 d-flex flex-column justify-content-center">
+          <div class="card-body d-flex flex-column justify-content-center">
             <h5 class="card-title">Aura Touch Lamp</h5>
             <p class="card-text">
               Velvet Comfort Chair Nordic Relax Chair Eclipse Swivel Chair Metro
               Dining Chair Urban Chic Armchair
             </p>
+          <div>
             <a href="#" class="btn bg-clr-yellow">View all</a>
+          </div>
           </div>
           <div>
             <img class="img-fluid" src="./Images/sofa.png" alt="ss" />
@@ -253,69 +261,78 @@
     </div>
 
     <!-- categories -->
-
     <div class="container">
       <h2>Featured categories</h2>
-
-      <div class="">
-        <div class="row justify-content-between mt-5">
-          <div w class="col-sm-6 col-md-4 col-lg-2 mt-2 text-center">
-            <img
-              width="150px"
-              class="img-bg img-fluid rounded-circle"
-              src="./Images/item-1.png"
-              alt="1"
-            />
-            <h5>Clock</h5>
-            <p>Discover 110 product</p>
-          </div>
-
+      <div class="row justify-content-between mt-5">
+          
           <div class="col-sm-6 col-md-4 col-lg-2 mt-2 text-center">
-            <img
-              width="150px"
-              class="img-bg img-fluid pt-2 pb-3 rounded-circle"
-              src="./Images/item.png"
-              alt="1"
-            />
-            <h5>Dinner Table</h5>
-            <p>Discover 110 product</p>
+              <div class="card-bg rounded-circle">
+                  <img
+                      class="card-img-top img-fluid rounded-circle"
+                      src="./Images/item-1.png"
+                      alt="Clock"
+                      style="object-fit: contain; width: 150px; height: 150px; object-position: center;"
+                  />
+              </div>
+              <h5>Clock</h5>
+              <p>Discover 110 products</p>
           </div>
-
+          
           <div class="col-sm-6 col-md-4 col-lg-2 mt-2 text-center">
-            <img
-              width="150px"
-              class="img-bg img-fluid rounded-circle"
-              src="./Images/item-3.png"
-              alt="1"
-            />
-            <h5>Pillow</h5>
-            <p>Discover 110 product</p>
+              <div class="card-bg rounded-circle">
+                  <img
+                      class="card-img-top img-fluid rounded-circle"
+                      src="./Images/item.png"
+                      alt="Dinner Table"
+                      style="object-fit: contain; width: 150px; height: 150px; object-position: center;"
+                  />
+              </div>
+              <h5>Dinner Table</h5>
+              <p>Discover 110 products</p>
           </div>
-
+          
+          <div class="col-sm-6 col-md-4 col-lg-2 mt-2 text-center">
+              <div class="card-bg rounded-circle">
+                  <img
+                      class="card-img-top img-fluid rounded-circle"
+                      src="./Images/item-3.png"
+                      alt="Pillow"
+                      style="object-fit: contain; width: 150px; height: 150px; object-position: center;"
+                  />
+              </div>
+              <h5>Pillow</h5>
+              <p>Discover 110 products</p>
+          </div>
+          
           <div class="col-sm-6 col-md-6 col-lg-2 mt-2 text-center">
-            <img
-              width="150px"
-              class="img-bg img-fluid rounded-circle"
-              src="./Images/item-4.png"
-              alt="1"
-            />
-            <h5>Lamp</h5>
-            <p>Discover 110 product</p>
+              <div class="card-bg rounded-circle">
+                  <img
+                      class="card-img-top img-fluid rounded-circle"
+                      src="./Images/item-4.png"
+                      alt="Lamp"
+                      style="object-fit: contain; width: 150px; height: 150px; object-position: center;"
+                  />
+              </div>
+              <h5>Lamp</h5>
+              <p>Discover 110 products</p>
           </div>
-
+          
           <div class="col-sm-12 col-md-6 col-lg-2 mt-2 text-center">
-            <img
-              width="150px"
-              class="img-bg img-fluid py-1 rounded-circle"
-              src="./Images/item-5.png"
-              alt="1"
-            />
-            <h5>Arm Chair</h5>
-            <p>Discover 110 product</p>
+              <div class="card-bg rounded-circle">
+                  <img
+                      class="card-img-top img-fluid rounded-circle"
+                      src="./Images/item-5.png"
+                      alt="Arm Chair"
+                      style="object-fit: contain; width: 150px; height: 150px; object-position: center;"
+                  />
+              </div>
+              <h5>Arm Chair</h5>
+              <p>Discover 110 products</p>
           </div>
-        </div>
+          
       </div>
-    </div>
+  </div>
+  
 
     <div class="container my-5">
       <h2>Trending Product <br />For you!</h2>
@@ -373,7 +390,7 @@
                 class="border border-1 rounded position-relative"
                 style="height: 100%"
               >
-                <div class="p-3">
+                <div class="p-3 card-bg">
                   <img
                     src="./Images/lamp.png"
                     class="selected-item-1 img-fluid rounded-3 card-img-top"
@@ -406,7 +423,7 @@
                 class="border border-1 rounded position-relative"
                 style="height: 100%"
               >
-                <div class="p-3">
+                <div class="p-3 card-bg">
                   <img
                     src="./Images/card-3.png"
                     class="selected-item-1 img-fluid rounded-3 card-img-top"
@@ -439,7 +456,7 @@
                 class="border border-1 rounded position-relative"
                 style="height: 100%"
               >
-                <div class="p-3">
+                <div class="p-3 card-bg">
                   <img
                     src="./Images/card-4.png"
                     class="selected-item-1 img-fluid rounded-3 card-img-top"
@@ -472,7 +489,7 @@
                 class="border border-1 rounded position-relative"
                 style="height: 100%"
               >
-                <div class="p-3">
+                <div class="p-3 card-bg">
                   <img
                     src="./Images/card-5.png"
                     class="selected-item-1 img-fluid rounded-3 card-img-top"
@@ -505,7 +522,7 @@
                 class="border border-1 rounded position-relative"
                 style="height: 100%"
               >
-                <div class="p-3">
+                <div class="p-3 card-bg">
                   <img
                     src="../images/img-8.png"
                     class="selected-item-1 img-fluid rounded-3 card-img-top"
@@ -573,6 +590,35 @@
         </div>
       </div>
     </section>
+
+    <script>
+      // Function to animate counters
+function animateCounters() {
+    const counters = document.querySelectorAll('.counter');
+    counters.forEach(counter => {
+        counter.innerText = '0'; // Start from zero
+
+        const updateCounter = () => {
+            const target = +counter.getAttribute('data-target'); // Get target value
+            const count = +counter.innerText; // Current count
+
+            const increment = target / 100; // Divide target by 100 for smooth animation
+
+            if (count < target) {
+                counter.innerText = Math.ceil(count + increment);
+                setTimeout(updateCounter, 15); // Call update every 15ms
+            } else {
+                counter.innerText = target; // Set final count to target
+            }
+        };
+
+        updateCounter();
+    });
+}
+
+// Run the animation when the page loads
+window.addEventListener('load', animateCounters);
+    </script>
 
     <script src="./index.js"></script>
   </body>

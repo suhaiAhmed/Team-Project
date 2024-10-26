@@ -149,9 +149,9 @@ color: #5F6368;
 }
 
 
-.img-bg{
+/* .img-bg{
     background-color: #D9D9D9;
-}
+} */
 
 .li-first{
     color: #4188B9;
@@ -182,6 +182,7 @@ input{
 
 
 /* header effexts  */
+
 
     /* Nav links */
     .navbar-nav .nav-link {
@@ -223,3 +224,97 @@ input{
     .navbar .iconify-icon:hover {
         color: #ffffff; /* Change color on hover */
     }
+
+
+
+    /* AQSA  */
+
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dark {
+    background-color: #243f52;
+}
+
+.header-icon {
+    font-family: "Roboto", sans-serif;
+}
+
+.service-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.vertical-line {
+    border-left: 2px solid #d6d3d3;
+    margin-left: 18px;
+    height: 50%;
+}
+
+/* Centers images horizontally and vertically */
+.image-container,
+.image-2-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Alignments for Small Screens */
+@media (max-width: 576px) { 
+    .image-container img,
+    .image-2-cont img {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .image-2-cont {
+        padding-left: 35px;
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Aligns navbar items in a single column */
+        text-align: center;
+    }
+
+    .service-item {
+        margin: 0 auto; /* Centers service items */
+    }
+}
+
+/* Initially hide the service links */
+.hover-content {
+    display: none;
+    position: absolute;
+    background-color:none;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Show the services section on hover */
+  #servicesDropdown:hover .hover-content {
+    display: block;
+  }
+  
+  /* Service links styling */
+  .hover-content a {
+    display: block;
+    color: rgb(3, 3, 3);
+    text-decoration: none;
+    padding: 5px 0;
+   
+  }
+  
+  .hover-content a:hover {
+    color: #E8BF04;
+    font-weight: bold;
+  }
+ 
+

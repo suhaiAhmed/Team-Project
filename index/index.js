@@ -179,3 +179,52 @@ if (signupForm) {
         window.location.href = './login.html';
     });
 }
+
+
+document.querySelectorAll('.card-img-top').forEach(img => {
+    if (img.parentElement) {
+      img.parentElement.style.backgroundColor = ' #D9D9D5';
+    }
+  });
+
+
+ 
+
+document.addEventListener('DOMContentLoaded', function() {
+    const dropdown = document.getElementById('servicesDropdown');
+  
+    // Show dropdown on hover
+    dropdown.addEventListener('mouseenter', () => {
+      dropdown.classList.add('show');
+      dropdown.querySelector('.dropdown-menu').classList.add('show');
+    });
+  
+    // Hide dropdown when mouse leaves
+    dropdown.addEventListener('mouseleave', () => {
+      dropdown.classList.remove('show');
+      dropdown.querySelector('.dropdown-menu').classList.remove('show');
+    });
+  });
+  
+
+
+
+
+  const popoverTrigger = document.getElementById('popoverIcon');
+  const popover = new bootstrap.Popover(popoverTrigger, {
+      html: true,
+      trigger: 'click', // Show popover on click
+      placement: 'bottom', // Position the popover below the image
+      content: function () {
+          return "<a href='./login.html' class='text-decoration-none text-dark me-2'>Login</a> | <a href='./signup.html' class='text-decoration-none ms-2 text-dark'>Signup</a>";
+      },
+  });
+  
+  // Close the popover when clicking outside of it
+  document.addEventListener('click', (e) => {
+      const isClickInside = popoverTrigger.contains(e.target) || popover._element.contains(e.target);
+      if (!isClickInside) {
+          popover.hide();
+      }
+  });
+  
