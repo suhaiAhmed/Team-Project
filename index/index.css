@@ -316,5 +316,57 @@ input{
     color: #E8BF04;
     font-weight: bold;
   }
+
+  .card-container {
+    height: 100%;
+    max-height: 350px; /* Adjust based on your needs */
+}
+
+.card-bg-2 {
+    height: 150px; /* Fixed height for the image container */
+    overflow: hidden;
+}
+
+.card-body {
+    height: 100px; /* Fixed height for the card body */
+    overflow: hidden; /* Hides any overflow text */
+}
+
+.card-bg-2 img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain; /* Keep the image aspect ratio */
+    object-position: center; /* Center the image */
+}
+.card-container {
+    height: 300px; /* Default height for all devices */
+    transition: height 0.3s; /* Smooth transition when height changes */
+}
+
+.card-bg-2 {
+    height: 70%; /* Set height for the card-bg relative to card-container */
+    overflow: hidden;
+}
+
+.card-bg-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensure image covers the entire card-bg area */
+}
+
+.card-body-2 {
+    height: 30%; 
+    overflow: hidden;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) { /* Medium devices */
+    .card-container {
+        height: 400px; /* Increase height for medium devices */
+    }
+}
+
+
+
+
  
 

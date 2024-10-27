@@ -106,20 +106,35 @@
     About Us
      ======================
       -->
-      <div class="row section mt-4">
-        <div class="col-md-6 d-flex flex-column justify-content-center">
-          <h2>About Us</h2>
-          <p>
+      <div class="row section mt-2">
+        <div
+          class="col-6 d-flex flex-column justify-content-center"
+          style="padding: 10px"
+        >
+          <h2 style="font-size: 1.5rem">About Us</h2>
+          <p id="aboutText" style="font-size: 1.1rem">
             Founded in 2001, Furniture Haven has been dedicated to creating
             beautiful, functional furniture that transforms homes and elevates
-            lifestyles. With a focus on quality craftsmanship, innovative
-            designs, and exceptional customer service, we strive to offer
-            furniture solutions that cater to modern living. Over the years, we
-            have grown from a small startup into a trusted brand, known for
-            delivering premium furniture with both style and substance.
+            lifestyles.
+            <span id="moreTextAbout" style="display: none">
+              With a focus on quality craftsmanship, innovative designs, and
+              exceptional customer service, we strive to offer furniture
+              solutions that cater to modern living. Over the years, we have
+              grown from a small startup into a trusted brand, known for
+              delivering premium furniture with both style and substance.
+            </span>
           </p>
+          <a
+            href="javascript:void(0);"
+            onclick="toggleText('moreTextAbout', 'seeMoreLink')"
+            id="seeMoreLink"
+            >See More</a
+          >
         </div>
-        <div class="col-md-6">
+        <div
+          class="col-6 "
+          style="padding: 1px"
+        >
           <img
             src="../images/image.png"
             alt="Group of people discussing furniture designs in an office setting"
@@ -130,158 +145,127 @@
 
       <!-- Our Mission -->
       <div class="row my-3">
-        <div class="col-md-6">
+        <div  style="padding: 1px" class="col-6">
           <img
             src="../images/image (1).png"
             alt="Team of people celebrating a successful project in an office"
             class="img-fluid rounded"
           />
         </div>
-        <div class="col-md-6 d-flex flex-column justify-content-center">
-          <h2>Our Mission</h2>
-          <p>
+        <div class="col-6 d-flex flex-column justify-content-center">
+          <h2 style="font-size: 1.5rem">Our Mission</h2>
+          <p id="missionText" style="font-size: 1.1rem">
             Our mission is to provide customers with thoughtfully designed
-            furniture that balances aesthetics and functionality. We believe
-            that great furniture should not only enhance the beauty of a space
-            but also serve the practical needs of everyday life. By making
-            high-quality furniture accessible and affordable, we aim to help
-            customers create homes they love.
+            furniture that balances aesthetics and functionality.
+            <span id="moreTextMission" style="display: none">
+              We believe that great furniture should not only enhance the beauty
+              of a space but also serve the practical needs of everyday life. By
+              making high-quality furniture accessible and affordable, we aim to
+              help customers create homes they love.
+            </span>
           </p>
+          <a
+            href="javascript:void(0);"
+            onclick="toggleText('moreTextMission', 'seeMoreMissionLink')"
+            id="seeMoreMissionLink"
+            >See More</a
+          >
         </div>
       </div>
 
       <!-- Our Achievements -->
 
-      <div class="container mt-4">
+      <section class="container mt-4">
         <div class="row">
-          <div class="col-md-6 d-flex flex-column justify-content-center">
-            <h2>Our Achievements</h2>
-            <p>
-              Since our inception in 2001, we have achieved significant
-              milestones, including:
-            </p>
-            <ul class="list-unstyled">
-              <li>
-                <strong>500,000+ Satisfied Customers:</strong> A loyal customer
-                base that continues to trust us for their furniture needs.
-              </li>
-              <li>
-                <strong>Award-Winning Designs:</strong> Our designs have been
-                recognized for their innovation, sustainability, and timeless
-                appeal.
-              </li>
-              <li>
-                <strong>Global Reach:</strong> Starting locally, we have
-                expanded internationally, offering our products to customers
-                across the globe.
-              </li>
-              <li>
-                <strong>Sustainable Practices:</strong> We are proud to
-                incorporate eco-friendly materials and production methods,
-                ensuring our furniture is as kind to the planet as it is to your
-                home.
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <div class="p-3">
-              <img
-                alt="Group of happy people celebrating in an office environment"
-                class="img-fluid rounded"
-                src="https://storage.googleapis.com/a1aa/image/Y8qM4yk6DC6ED9eYxJj53yKiVebLglU9SmkKHYpqlTtGzhpTA.jpg"
-              />
+            <div class="col-6 d-flex flex-column justify-content-center" style="padding: 1px;">
+                <h2 style="font-size: 1.5rem">Our Achievements</h2>
+                <p id="achievementsText">
+                    Since our inception in 2001, we have achieved significant milestones, including:
+                </p>
+                <span id="moreAchievementsText" style="display: none;">
+                    <ul style="font-size: 1.1rem" class="list-unstyled mt-2">
+                        <li><strong>500,000+ Satisfied Customers:</strong> A loyal customer base that continues to trust us.</li>
+                        <li><strong>Award-Winning Designs:</strong> Our designs have been recognized for their innovation, sustainability, and timeless appeal.</li>
+                        <li><strong>Global Reach:</strong> Starting locally, we have expanded internationally, offering our products worldwide.</li>
+                        <li><strong>Sustainable Practices:</strong> We incorporate eco-friendly materials, ensuring our furniture is planet-friendly.</li>
+                    </ul>
+                </span>
+                <a href="javascript:void(0);" onclick="toggleText('moreAchievementsText', 'seeMoreAchievementsLink')" id="seeMoreAchievementsLink" style="margin-top: -5px;">See More</a>
             </div>
-          </div>
+            <div class="col-6 " style="padding: 1px;">
+                <img
+                    alt="Group of happy people celebrating in an office environment"
+                    class="img-fluid rounded"
+                    src="https://storage.googleapis.com/a1aa/image/Y8qM4yk6DC6ED9eYxJj53yKiVebLglU9SmkKHYpqlTtGzhpTA.jpg"
+                />
+            </div>
         </div>
-      </div>
+    </section>
     </section>
 
     <!-- Meeeet our Team -->
 
     <section class="container text-center mt-5">
       <h2 class="my-5">Meet with Our Team</h2>
-      <div class="row mt-4">
-        <div class="col-md-4 mb-2">
-          <div>
-            <img
-              alt="Ali - SEO Specialist"
-              class="img-fluid rounded"
-              src="https://storage.googleapis.com/a1aa/image/JIZsEp6LIOa0IRRJqzly7sa9pzQvNte7e1SfkYwM3TAmxDTnA.jpg"
-            />
-          </div>
-          <div class="dark rounded p-2">
-            <h5 class="text-light">Ali</h5>
-            <p class="text-light">SEO Specialist</p>
+      <div class="row gx-1 gy-1 mt-4"> <!-- Adjusted gap with gx-1 gy-1 -->
+        <div class="col-4 mb-2">
+          <div class="card h-100">
+            <img alt="Ali - SEO Specialist" class="img-fluid rounded-top" src="../images/team/image (4).svg" />
+            <div class="dark rounded p-2" style="height: inherit;">
+              <h5 class="text-light">Ali</h5>
+              <p class="text-light">SEO Specialist</p>
+            </div>
           </div>
         </div>
-        <div class="col-md-4 mb-2">
-          <div>
-            <img
-              alt="Faizan - DIY Expert"
-              class="img-fluid rounded"
-              src="https://storage.googleapis.com/a1aa/image/bx4ITbNf133HNiww6ofUvkr0VFwkw5aBOZdKBfx1qUTgxDTnA.jpg"
-            />
-          </div>
-          <div class="dark rounded p-2">
-            <h5 class="text-light">Faizan</h5>
-            <p class="text-light">DIY Expert</p>
+        <div class="col-4 mb-2">
+          <div class="card h-100">
+            <img alt="Faizan - DIY Expert" class="img-fluid rounded-top" src="../images/team/image (1).svg" />
+            <div class="dark rounded p-2" style="height: inherit;">
+              <h5 class="text-light">Faizan</h5>
+              <p class="text-light">DIY Expert</p>
+            </div>
           </div>
         </div>
-        <div class="col-md-4 mb-2">
-          <div>
-            <img
-              alt="Sara - Head of Design"
-              class="img-fluid rounded"
-              src="https://storage.googleapis.com/a1aa/image/az8ECUELf9wcHKTP5x25Ir5Wckw6NMuHnkFzE57nbQ9Y8w0JA.jpg"
-            />
-          </div>
-          <div class="dark rounded p-2">
-            <h5 class="text-light">Sara</h5>
-            <p class="text-light">Head of Design</p>
+        <div class="col-4 mb-2">
+          <div class="card h-100">
+            <img alt="Sara - Head of Design" class="img-fluid rounded-top" src="../images/team/image (5).svg" />
+            <div class="dark rounded p-2">
+              <h5 class="text-light">Sara</h5>
+              <p class="text-light">Head of Design</p>
+            </div>
           </div>
         </div>
-        <div class="col-md-4 mb-2">
-          <div>
-            <img
-              alt="Ayesha"
-              class="img-fluid rounded"
-              src="https://storage.googleapis.com/a1aa/image/MJWzF80xhj6RG5IeFyuHCxII3OzAXIZo6Lqb2pnzcLYX8w0JA.jpg"
-            />
-          </div>
-          <div class="dark p-2">
-            <h5 class="text-light">Ayesha</h5>
-            <p class="text-light">.</p>
+        <div class="col-4 mb-2">
+          <div class="card h-100">
+            <img alt="Ayesha" class="img-fluid rounded-top" src="../images/team/image (3).svg" />
+            <div class="dark rounded p-2" style="height: inherit;">
+              <h5 class="text-light">Ayesha</h5>
+              <p class="text-light">.</p>
+            </div>
           </div>
         </div>
-        <div class="col-md-4 mb-2">
-          <div>
-            <img
-              alt="Usman - Lead Engineer"
-              class="img-fluid rounded"
-              src="https://storage.googleapis.com/a1aa/image/CdQwqQU6TEYdFZ1MltZfJk13gD4fRt8FErekolWmzNkrxDTnA.jpg"
-            />
-          </div>
-          <div class="dark rounded p-2">
-            <h5 class="text-light">Usman</h5>
-            <p class="text-light">Lead Engineer</p>
+        <div class="col-4 mb-2">
+          <div class="card h-100">
+            <img alt="Usman - Lead Engineer" class="img-fluid rounded-top" src="../images/team/image.svg" />
+            <div class="dark rounded p-2" style="height: inherit;">
+              <h5 class="text-light">Usman</h5>
+              <p class="text-light">Lead Engineer</p>
+            </div>
           </div>
         </div>
-        <div class="col-md-4 mb-2">
-          <div>
-            <img
-              alt="Maira - Marketing Strategist"
-              class="img-fluid rounded"
-              src="https://storage.googleapis.com/a1aa/image/Y44Z9v3OzWL9P1s5ekpz4vh361evl6HjbYJUBuRBMIV04hpTA.jpg"
-            />
-          </div>
-          <div class="dark rounded p-2">
-            <h5 class="text-light">Maira</h5>
-            <p class="text-light">Marketing Strategist</p>
+        <div class="col-4 mb-2">
+          <div class="card h-100">
+            <img alt="Maira - Marketing Strategist" class="img-fluid rounded-top" src="../images/team/image (2).svg" />
+            <div class="dark rounded p-2">
+              <h5 class="text-light">Maira</h5>
+              <p class="text-light">Marketing Strategist</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
-
+    
+    
     <!-- 
      ======================
     FOOOTER
@@ -324,5 +308,44 @@
     </section>
 
     <script src="./index.js"></script>
+
+    <script>
+      function toggleText(textId, linkId) {
+        const moreText = document.getElementById(textId);
+        const link = document.getElementById(linkId);
+
+        if (moreText.style.display === "none") {
+          moreText.style.display = "inline";
+          link.innerText = "See Less";
+        } else {
+          moreText.style.display = "none";
+          link.innerText = "See More";
+        }
+      }
+      function toggleText(textId, linkId) {
+      const text = document.getElementById(textId);
+      const link = document.getElementById(linkId);
+
+      if (text.style.display === "none") {
+          text.style.display = "inline";
+          link.textContent = "See Less";
+      } else {
+          text.style.display = "none";
+          link.textContent = "See More";
+      }
+  }
+
+  document.addEventListener('click', (e) => {
+      const text = document.getElementById('moreAchievementsText');
+      const link = document.getElementById('seeMoreAchievementsLink');
+
+      if (!text.contains(e.target) && !link.contains(e.target)) {
+          text.style.display = "none";
+          link.textContent = "See More";
+      }
+  });
+    </script>
+
+
   </body>
 </html>

@@ -85,7 +85,7 @@
             </li>
           </ul>
           <div>          
-              <img class="img-fluid" src="../images/account.png" alt="Account" id="popoverIcon" />       
+              <img class="" src="../images/account.png" alt="Account" id="popoverIcon" />       
             <a class="text-decoration-none" href="./addToCart.html">
               <img class="mx-3" src="../images/cart.png" alt="Cart" />
             </a>
@@ -346,398 +346,327 @@
           <!-- Product Cards -->
 
           <div class="container mt-5">
-            <div class="row g-4 mt-2" id="product-cards">
-              <div class="col-md-4">
-                  <div class="border border-1 rounded position-relative" style="height: 100%">
-                      <div class="p-3 card-bg">
-                          <img
-                              src="../images/img-2.png"
-                              data-url="./productsFiles/reveiw.html"
-                              class="selected-item-1 img-fluid card-img-top"
-                              alt="Comfortable sofa"
-                          />
-                          <i class="bi bi-heart position-absolute start-0 top-0 fs-2 ms-2 mt-2 text-warning"></i>
-                      </div>
-                      <div class="card-body dark p-3 text-light rounded">
-                          <p>Comfortable Sofa</p>
-                          <div class="d-flex justify-content-between align-items-center">
-                              <span class="price">50.50$</span>
-                              <img
-                                  class="bg-warning rounded-circle p-1 add-to-cart"
-                                  src="../images/cart.png"
-                                  alt=""
-                                  onclick="addToCart('Comfortable Sofa', 50.50, '../images/img-2.png')"
-                              />
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          
-              <div class="col-md-4">
-                  <div class="border border-1 rounded position-relative" style="height: 100%">
-                      <div class="p-3 card-bg">
-                          <img
-                              src="../images/img-3.png"
-                              data-url="./productsFiles/lamp.html"
-                              class="selected-item-1 img-fluid card-img-top"
-                              alt="Beautiful Lamp"
-                          />
-                          <i class="bi bi-heart position-absolute start-0 top-0 fs-2 ms-2 mt-2 text-warning"></i>
-                      </div>
-                      <div class="card-body dark p-3 text-light rounded">
-                          <p>Beautiful Lamp</p>
-                          <div class="d-flex justify-content-between align-items-center">
-                              <span class="price">50.50$</span>
-                              <img
-                                  class="bg-warning rounded-circle p-1 add-to-cart"
-                                  src="../images/cart.png"
-                                  alt=""
-                                  onclick="addToCart('Beautiful Lamp', 50.50, '../images/img-3.png')"
-                              />
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          
-              <div class="col-md-4">
-                  <div class="border border-1 rounded position-relative" style="height: 100%">
-                      <div class="p-3 card-bg">
-                          <img
-                              src="../images/img-1.png"
-                              data-url="./productsFiles/pillow.html"
-                              class="selected-item-1 img-fluid card-img-top"
-                              alt="Soft Pillow"
-                          />
-                          <i class="bi bi-heart position-absolute start-0 top-0 fs-2 ms-2 mt-2 text-warning"></i>
-                      </div>
-                      <div class="card-body dark p-3 text-light rounded">
-                          <p>Soft Pillow</p>
-                          <div class="d-flex justify-content-between align-items-center">
-                              <span class="price">10.50$</span>
-                              <img
-                                  class="bg-warning rounded-circle p-1 add-to-cart"
-                                  src="../images/cart.png"
-                                  alt=""
-                                  onclick="addToCart('Soft Pillow', 10.50, '../images/img-1.png')"
-                              />
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          
 
-          <div class="row g-4 mt-2">
-            <div class="col-md-4">
-              <div
-                class="border border-1 rounded position-relative"
-                style="height: 100%"
-              >
-                <div class="p-3 card-bg">
-                  <img
-                    src="../images/img-4.png"
-                    data-url="./productsFiles/dinner.html"
-                    class="selected-item-1 img-fluid card-img-top"
-                    alt="Dinner Table"
-                  />
-
-                  <i
-                    class="bi bi-heart position-absolute start-0 top-0 fs-2 ms-2 mt-2 text-warning"
-                  ></i>
-                </div>
-                <div class="card-body dark p-3 text-light rounded">
-                  <p>Dinner Table</p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <span>100.5$</span>
+            <div class="row g-1 mt-2" id="product-cards">
+              <div class="col-4">
+                <div class="border border-1 rounded position-relative card-container">
+                  <div class="p-3 card-bg-2">
                     <img
-                      class="bg-warning rounded-circle p-1"
+                      src="../images/img-2.png"
+                      data-url="./productsFiles/reveiw.html"
+                      class="selected-item-1 img-fluid card-img-top"
+                      alt="Comfortable Sofa"
+                    />
+                    <i class="bi bi-heart position-absolute start-0 top-0 fs-2 ms-2 mt-2 text-warning"></i>
+                    <img
+                      class="bg-warning rounded-circle position-absolute end-0 bottom-0 me-2 mb-2"
                       src="../images/cart.png"
                       alt="Cart"
+                      style="padding: 2px; width: 30px; height: 30px;"
+                      onclick="addToCart('Comfortable Sofa', 50.50, '../images/img-2.png')"
+                    />
+                  </div>
+                  <div class="card-body-2 dark p-3 text-light rounded">
+                    <p class="mb-1">Comfortable Sofa</p>
+                    <span class="price">50.50$</span>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="col-4">
+                <div class="border border-1 rounded position-relative card-container">
+                  <div class="p-3 card-bg-2">
+                    <img
+                      src="../images/img-3.png"
+                      data-url="./productsFiles/lamp.html"
+                      class="selected-item-1 img-fluid card-img-top"
+                      alt="Beautiful Lamp"
+                    />
+                    <i class="bi bi-heart position-absolute start-0 top-0 fs-2 ms-2 mt-2 text-warning"></i>
+                    <img
+                      class="bg-warning rounded-circle position-absolute end-0 bottom-0 me-2 mb-2"
+                      src="../images/cart.png"
+                      alt="Cart"
+                      style="padding: 2px; width: 30px; height: 30px;"
+                      onclick="addToCart('Beautiful Lamp', 50.50, '../images/img-3.png')"
+                    />
+                  </div>
+                  <div class="card-body-2 dark p-3 text-light rounded">
+                    <p class="mb-1">Beautiful Lamp</p>
+                    <span class="price">50.50$</span>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="col-4">
+                <div class="border border-1 rounded position-relative card-container">
+                  <div class="p-3 card-bg-2">
+                    <img
+                      src="../images/img-1.png"
+                      data-url="./productsFiles/pillow.html"
+                      class="selected-item-1 img-fluid card-img-top"
+                      alt="Soft Pillow"
+                    />
+                    <i class="bi bi-heart position-absolute start-0 top-0 fs-2 ms-2 mt-2 text-warning"></i>
+                    <img
+                      class="bg-warning rounded-circle position-absolute end-0 bottom-0 me-2 mb-2"
+                      src="../images/cart.png"
+                      alt="Cart"
+                      style="padding: 2px; width: 30px; height: 30px;"
+                      onclick="addToCart('Soft Pillow', 10.50, '../images/img-1.png')"
+                    />
+                  </div>
+                  <div class="card-body-2 dark p-3 text-light rounded">
+                    <p class="mb-1">Soft Pillow</p>
+                    <span class="price">10.50$</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          
+          
+          
+          
+            <div class="row g-1 mt-2" id="product-cards">
+              <div class="col-4">
+                <div class="border border-1 rounded position-relative card-container">
+                  <div class="p-3 card-bg-2">
+                    <img
+                      src="../images/img-4.png"
+                      data-url="./productsFiles/dinner.html"
+                      class="selected-item-1 img-fluid card-img-top"
+                      alt="Dinner Table"
+                    />
+                    <i class="bi bi-heart position-absolute start-0 top-0 fs-2 ms-2 mt-2 text-warning"></i>
+                    <img
+                      class="bg-warning rounded-circle position-absolute end-0 bottom-0 me-2 mb-2"
+                      src="../images/cart.png"
+                      alt="Cart"
+                      style="padding: 2px; width: 30px; height: 30px;"
                       onclick="addToCart('Dinner Table', 100.5, '../images/img-4.png')"
                     />
                   </div>
+                  <div class="card-body-2 dark p-3 text-light rounded">
+                    <p class="mb-1">Dinner Table</p>
+                    <span>100.5$</span>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div class="col-md-4">
-              <div
-                class="border border-1 rounded position-relative"
-                style="height: 100%"
-              >
-                <div class="p-3 card-bg">
-                  <img
-                    data-url="./productsFiles/lamp2.html"
-                    src="../images/img-5.png"
-                    class="img-fluid card-img-top selected-item-1"
-                    style="height: 250px; object-fit: contain"
-                    alt="Beautiful Lamp"
-                  />
-                  <i
-                    class="bi bi-heart position-absolute start-0 top-0 fs-2 ms-2 mt-2 text-warning"
-                  ></i>
-                </div>
-                <div class="card-body dark p-3 text-light rounded">
-                  <p>Beautiful Lamp</p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <span>150.5$</span>
+            
+              <div class="col-4">
+                <div class="border border-1 rounded position-relative card-container">
+                  <div class="p-3 card-bg-2">
                     <img
-                      class="bg-warning rounded-circle p-1"
+                      data-url="./productsFiles/lamp2.html"
+                      src="../images/img-5.png"
+                      class="img-fluid card-img-top selected-item-1"
+                      alt="Beautiful Lamp"
+                    />
+                    <i class="bi bi-heart position-absolute start-0 top-0 fs-2 ms-2 mt-2 text-warning"></i>
+                    <img
+                      class="bg-warning rounded-circle position-absolute end-0 bottom-0 me-2 mb-2"
                       src="../images/cart.png"
                       alt="Cart"
+                      style="padding: 2px; width: 30px; height: 30px;"
                       onclick="addToCart('Beautiful Lamp', 150.5, '../images/img-5.png')"
                     />
                   </div>
+                  <div class="card-body-2 dark p-3 text-light rounded">
+                    <p class="mb-1">Beautiful Lamp</p>
+                    <span>150.5$</span>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div class="col-md-4">
-              <div
-                class="border border-1 rounded position-relative"
-                style="height: 100%"
-              >
-                <div class="p-3 card-bg">
-                  <img
-                    data-url="./productsFiles/bedSet.html"
-                    src="../images/img-6.png"
-                    class="img-fluid card-img-top selected-item-1"
-                    style="height: 250px; object-fit: contain"
-                    alt="Pillows on bed set"
-                  />
-                  <i
-                    class="bi bi-heart position-absolute start-0 top-0 fs-2 ms-2 mt-2 text-warning"
-                  ></i>
-                </div>
-                <div class="card-body dark p-3 text-light rounded">
-                  <p>Pillows on bed set</p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <span>105.5$</span>
+            
+              <div class="col-4">
+                <div class="border border-1 rounded position-relative card-container">
+                  <div class="p-3 card-bg-2">
                     <img
-                      class="bg-warning rounded-circle p-1"
+                      data-url="./productsFiles/bedSet.html"
+                      src="../images/img-6.png"
+                      class="img-fluid card-img-top selected-item-1"
+                      alt="Pillows on Bed Set"
+                    />
+                    <i class="bi bi-heart position-absolute start-0 top-0 fs-2 ms-2 mt-2 text-warning"></i>
+                    <img
+                      class="bg-warning rounded-circle position-absolute end-0 bottom-0 me-2 mb-2"
                       src="../images/cart.png"
                       alt="Cart"
+                      style="padding: 2px; width: 30px; height: 30px;"
                       onclick="addToCart('Pillows on bed set', 105.5, '../images/img-6.png')"
                     />
                   </div>
+                  <div class="card-body-2 dark p-3 text-light rounded">
+                    <p class="mb-1">Pillows on Bed Set</p>
+                    <span>105.5$</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="row g-4 mt-2">
-            <div class="col-md-4">
-              <div
-                class="border border-1 rounded position-relative"
-                style="height: 100%"
-              >
-                <div class="p-3 card-bg">
-                  <img
-                    data-url="./productsFiles/sofa.html"
-                    src="../images/img-7.png"
-                    class="img-fluid card-img-top selected-item-1"
-                    style="height: 250px; object-fit: contain"
-                    alt="Comfortable sofa"
-                  />
-                  <i
-                    class="bi bi-heart position-absolute start-0 top-0 fs-2 ms-2 mt-2 text-warning"
-                  ></i>
-                </div>
-                <div class="card-body dark p-3 text-light rounded">
-                  <p>Comfortable sofa</p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <span>50.5$</span>
+            
+        
+        
+            <div class="row g-1 mt-2" id="product-cards">
+              <div class="col-4">
+                <div class="border border-1 rounded position-relative card-container">
+                  <div class="p-3 card-bg-2">
                     <img
-                      class="bg-warning rounded-circle p-1"
+                      data-url="./productsFiles/sofa.html"
+                      src="../images/img-7.png"
+                      class="img-fluid card-img-top selected-item-1"
+                      alt="Comfortable Sofa"
+                    />
+                    <i class="bi bi-heart position-absolute start-0 top-0 fs-2 ms-2 mt-2 text-warning"></i>
+                    <img
+                      class="bg-warning rounded-circle position-absolute end-0 bottom-0 me-2 mb-2"
                       src="../images/cart.png"
                       alt="Cart"
+                      style="padding: 2px; width: 30px; height: 30px;"
                       onclick="addToCart('Comfortable sofa', 50.5, '../images/img-7.png')"
                     />
                   </div>
+                  <div class="card-body-2 dark p-3 text-light rounded">
+                    <p class="mb-1">Comfortable Sofa</p>
+                    <span>50.5$</span>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div class="col-md-4">
-              <div
-                class="border border-1 rounded position-relative"
-                style="height: 100%"
-              >
-                <div class="p-3 card-bg">
-                  <img
-                    data-url="./productsFiles/ottoman.html"
-                    src="../images/img-8.png"
-                    class="selected-item-1 img-fluid card-img-top"
-                    style="height: 250px; object-fit: contain"
-                    alt="Soft Teal Ottoman"
-                  />
-                  <i
-                    class="bi bi-heart position-absolute start-0 top-0 fs-2 ms-2 mt-2 text-warning"
-                  ></i>
-                </div>
-                <div class="card-body dark p-3 text-light rounded">
-                  <p>Soft Teal Ottoman</p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <span>20.5$</span>
+            
+              <div class="col-4">
+                <div class="border border-1 rounded position-relative card-container">
+                  <div class="p-3 card-bg-2">
                     <img
-                      class="bg-warning rounded-circle p-1"
+                      data-url="./productsFiles/ottoman.html"
+                      src="../images/img-8.png"
+                      class="img-fluid card-img-top selected-item-1"
+                      alt="Soft Teal Ottoman"
+                    />
+                    <i class="bi bi-heart position-absolute start-0 top-0 fs-2 ms-2 mt-2 text-warning"></i>
+                    <img
+                      class="bg-warning rounded-circle position-absolute end-0 bottom-0 me-2 mb-2"
                       src="../images/cart.png"
                       alt="Cart"
+                      style="padding: 2px; width: 30px; height: 30px;"
                       onclick="addToCart('Soft Teal Ottoman', 20.5, '../images/img-8.png')"
                     />
                   </div>
+                  <div class="card-body-2 dark p-3 text-light rounded">
+                    <p class="mb-1">Soft Teal Ottoman</p>
+                    <span>20.5$</span>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div class="col-md-4">
-              <div
-                class="border border-1 rounded position-relative"
-                style="height: 100%"
-              >
-                <div class="p-3 card-bg">
-                  <img
-                    data-url="./productsFiles/red-pilow.html"
-                    src="../images/img-9.png"
-                    class="img-fluid card-img-top selected-item-1"
-                    style="height: 250px; object-fit: contain"
-                    alt="Soft Pillow"
-                  />
-                  <i
-                    class="bi bi-heart position-absolute start-0 top-0 fs-2 ms-2 mt-2 text-warning"
-                  ></i>
-                </div>
-                <div class="card-body dark p-3 text-light rounded">
-                  <p>Soft Pillow</p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <span>11.5$</span>
+            
+              <div class="col-4">
+                <div class="border border-1 rounded position-relative card-container">
+                  <div class="p-3 card-bg-2">
                     <img
-                      class="bg-warning rounded-circle p-1"
+                      data-url="./productsFiles/red-pilow.html"
+                      src="../images/img-9.png"
+                      class="img-fluid card-img-top selected-item-1"
+                      alt="Soft Pillow"
+                    />
+                    <i class="bi bi-heart position-absolute start-0 top-0 fs-2 ms-2 mt-2 text-warning"></i>
+                    <img
+                      class="bg-warning rounded-circle position-absolute end-0 bottom-0 me-2 mb-2"
                       src="../images/cart.png"
                       alt="Cart"
+                      style="padding: 2px; width: 30px; height: 30px;"
                       onclick="addToCart('Soft Pillow', 11.5, '../images/img-9.png')"
                     />
                   </div>
+                  <div class="card-body-2 dark p-3 text-light rounded">
+                    <p class="mb-1">Soft Pillow</p>
+                    <span>11.5$</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="row g-4 mt-2">
-            <div class="col-md-4">
-              <div
-                class="border border-1 rounded position-relative"
-                style="height: 100%"
-              >
-                <div class="p-3 card-bg">
-                  <img
-                    data-url="./productsFiles/blue-soft-teal.html"
-                    src="../images/img-10.png"
-                    class="img-fluid card-img-top selected-item-1"
-                    style="height: 250px; object-fit: contain"
-                    alt="Soft Teal Ottoman"
-                  />
-                  <i
-                    class="bi bi-heart position-absolute start-0 top-0 fs-2 ms-2 mt-2 text-warning"
-                  ></i>
-                </div>
-                <div class="card-body dark p-3 text-light rounded">
-                  <p>Soft Teal Ottoman</p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <span>21.5$</span>
+            
+      
+      
+            <div class="row g-1 mt-2" id="product-cards">
+              <div class="col-4">
+                <div class="border border-1 rounded position-relative card-container">
+                  <div class="p-3 card-bg-2">
                     <img
-                      class="bg-warning rounded-circle p-1"
+                      data-url="./productsFiles/blue-soft-teal.html"
+                      src="../images/img-10.png"
+                      class="img-fluid card-img-top selected-item-1"
+                      alt="Soft Teal Ottoman"
+                    />
+                    <i class="bi bi-heart position-absolute start-0 top-0 fs-2 ms-2 mt-2 text-warning"></i>
+                    <img
+                      class="bg-warning rounded-circle position-absolute end-0 bottom-0 me-2 mb-2"
                       src="../images/cart.png"
                       alt="Cart"
+                      style="padding: 2px; width: 30px; height: 30px;"
                       onclick="addToCart('Soft Teal Ottoman', 21.5, '../images/img-10.png')"
                     />
                   </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div
-                class="border border-1 rounded position-relative"
-                style="height: 100%"
-              >
-                <div class="p-3 card-bg">
-                  <img
-                    data-url="./productsFiles/arm-bench.html"
-                    src="../images/img-11.png"
-                    class="img-fluid card-img-top selected-item-1"
-                    style="height: 250px; object-fit: contain"
-                    alt="Arm bench"
-                  />
-                  <i
-                    class="bi bi-heart position-absolute start-0 top-0 fs-2 ms-2 mt-2 text-warning"
-                  ></i>
-                </div>
-                <div class="card-body dark p-3 text-light rounded">
-                  <p>Arm bench</p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <span>60.5$</span>
-                    <img
-                      class="bg-warning rounded-circle p-1"
-                      src="../images/cart.png"
-                      alt="Cart"
-                      onclick="addToCart('Arm bench', 60.5, '../images/img-11.png')"
-                    />
+                  <div class="card-body-2 dark p-3 text-light rounded">
+                    <p class="mb-1">Soft Teal Ottoman</p>
+                    <span>21.5$</span>
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="col-md-4">
-              <div
-                class="border border-1 rounded position-relative"
-                style="height: 100%"
-              >
-                <div class="p-3 card-bg">
-                  <img
-                    data-url="./productsFiles/clock.html"
-                    src="../images/img-12.png"
-                    class="img-fluid card-img-top selected-item-1"
-                    style="height: 250px; object-fit: contain"
-                    alt="Clock"
-                  />
-                  <i
-                    class="bi bi-heart position-absolute start-0 top-0 fs-2 ms-2 mt-2 text-warning"
-                  ></i>
-                </div>
-                <div class="card-body dark p-3 text-light rounded">
-                  <p>Clock</p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <span>100$</span>
+            
+              <div class="col-4">
+                <div class="border border-1 rounded position-relative card-container">
+                  <div class="p-3 card-bg-2">
                     <img
-                      class="bg-warning rounded-circle p-1"
+                      data-url="./productsFiles/arm-bench.html"
+                      src="../images/img-11.png"
+                      class="img-fluid card-img-top selected-item-1"
+                      alt="Arm Bench"
+                    />
+                    <i class="bi bi-heart position-absolute start-0 top-0 fs-2 ms-2 mt-2 text-warning"></i>
+                    <img
+                      class="bg-warning rounded-circle position-absolute end-0 bottom-0 me-2 mb-2"
                       src="../images/cart.png"
                       alt="Cart"
+                      style="padding: 2px; width: 30px; height: 30px;"
+                      onclick="addToCart('Arm Bench', 60.5, '../images/img-11.png')"
+                    />
+                  </div>
+                  <div class="card-body-2 dark p-3 text-light rounded">
+                    <p class="mb-1">Arm Bench</p>
+                    <span>60.5$</span>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="col-4">
+                <div class="border border-1 rounded position-relative card-container">
+                  <div class="p-3 card-bg-2">
+                    <img
+                      data-url="./productsFiles/clock.html"
+                      src="../images/img-12.png"
+                      class="img-fluid card-img-top selected-item-1"
+                      alt="Clock"
+                    />
+                    <i class="bi bi-heart position-absolute start-0 top-0 fs-2 ms-2 mt-2 text-warning"></i>
+                    <img
+                      class="bg-warning rounded-circle position-absolute end-0 bottom-0 me-2 mb-2"
+                      src="../images/cart.png"
+                      alt="Cart"
+                      style="padding: 2px; width: 30px; height: 30px;"
                       onclick="addToCart('Clock', 100, '../images/img-12.png')"
                     />
                   </div>
+                  <div class="card-body-2 dark p-3 text-light rounded">
+                    <p class="mb-1">Clock</p>
+                    <span>100$</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+            
+    
+    
+    
+    
         </div>
       </div>
     </section>
